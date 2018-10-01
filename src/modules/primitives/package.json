@@ -8,7 +8,7 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --importMemory --sharedMemory=32767 --validate",
+        "asbuild:untouched": "asc assembly/*.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --importMemory --sharedMemory=32767 --validate",
         "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat -O3 --importMemory --sharedMemory=32767 --validate --noDebug --noAssert",
         "build": "yarn asbuild:untouched && yarn asbuild:optimized"
     },
