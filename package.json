@@ -1,0 +1,24 @@
+{
+    "name": "three.rays",
+    "version": "1.0.0",
+    "description": "A Path Tracing Renderer for Three.js backed by AssemblyScript and WebAssembly",
+    "main": "src/index.ts",
+    "repository": "git@github.com:01alchemist/three.rays.git",
+    "author": "Nidin Vinayakan <01@01alchemist.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "launch": "ts-node --project ./scripts/tsconfig.json ./scripts/launch.ts",
+        "build.primitive": "yarn launch yarn build --cwd=src/modules/primitives",
+        "build": "yarn build.primitive"
+    },
+    "devDependencies": {
+        "@types/jest": "^23.3.2",
+        "@types/node": "^10.11.3",
+        "assemblyscript": "AssemblyScript/assemblyscript",
+        "chalk": "^2.4.1",
+        "dotenv": "^6.0.0",
+        "minimist": "^1.2.0",
+        "webpack": "^4.20.2"
+    }
+}
