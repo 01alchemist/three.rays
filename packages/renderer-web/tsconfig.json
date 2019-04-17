@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es2015",
+    "baseUrl": ".",
+    "paths": {
+      "~renderer-common": ["./packages/renderer-common/src"]
+    }
+  },
+  "files": ["src/index.ts"]
+}

@@ -1,1 +1,0 @@
-import { BVH } from './bvh';

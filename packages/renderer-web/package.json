@@ -1,27 +1,18 @@
 {
-  "name": "three.rays",
+  "name": "@three.rays/renderer-web",
   "version": "1.0.0",
   "description": "A Path Tracing Renderer for Three.js backed by AssemblyScript and WebAssembly",
   "main": "src/index.ts",
   "repository": "git@github.com:01alchemist/three.rays.git",
   "author": "Nidin Vinayakan <01@01alchemist.com>",
   "license": "MIT",
-  "private": true,
-  "engines": {
-    "node": "10.*.*",
-    "yarn": "1.*.*"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
+  "private": false,
   "scripts": {
-    "launch": "node ./scripts/launch.js",
-    "build.web": "yarn launch yarn build --cwd=packages/renderer-web"
+    "build": "webpack"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.11.3",
-    "assemblyscript": "AssemblyScript/assemblyscript",
     "chalk": "^2.4.1",
     "dotenv": "^6.0.0",
     "minimist": "^1.2.0",
@@ -29,6 +20,12 @@
     "webpack-cli": "^3.3.0",
     "webpack-node-externals": "^1.7.2",
     "clean-webpack-plugin": "^0.1.16",
-    "three": "^0.103.0"
+    "typescript": "^3.4.3",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.16.0",
+    "tslint-loader": "^3.5.4",
+    "raw-loader": "^2.0.0",
+    "json-loader": "^0.5.7",
+    "yaml-loader": "^0.5.0"
   }
 }
