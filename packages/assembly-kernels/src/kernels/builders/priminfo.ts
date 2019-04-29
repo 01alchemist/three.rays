@@ -147,3 +147,6 @@ class SetMB extends PrimInfoMB
     public:
       PrimRefVector prims;
     };
+class PrimInfoMB extends PrimInfoMBT<PrimRefMB::BBox>{
+
+}
