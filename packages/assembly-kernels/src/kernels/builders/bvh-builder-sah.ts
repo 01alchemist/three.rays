@@ -20,7 +20,12 @@ class Settings {
 }
 
 class BuildRecord {
+  constructor(public depth:int){
 
+  }
+  constructor(prims public depth:int){
+
+  }
 }
 
 type PrimRef = any;
